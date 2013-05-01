@@ -24,9 +24,20 @@ namespace Checkpoints
     // + Contains no strange transactions
     //
     static MapCheckpoints mapCheckpoints =
+<<<<<<< HEAD
         boost::assign::map_list_of
         (     1, uint256("0x0")) // No checkpoints before coin is started!
         ;
+=======
+            boost::assign::map_list_of
+            (     1, uint256("0xfdbe99b90c90bae7505796461471d89ae8388ab953997aa06a355bbda8d915cb"))
+            (     22267, uint256("0x23dc7d871fc2a9b994112e978019f6370bab0b8979f557afe77a7ab620224b70"))
+			(     22847, uint256("0x1450b80c150fee1e657ee8309819276342c021fab5e6a20ccf5407f5e2218d0f"))
+			(     23453, uint256("0x7c25d3f9671e1d9400c9a1be2ff68e68db561ab85ae6b7020062d8d26da81e4c"))
+            (     28230, uint256("0xd3feb71f92c63c682f994d7c615adc425226c669a83d46012b32fc8d518b08bb"))
+            ;
+
+>>>>>>> abb747b... Fall back to IPv4 if IPv6 fails
 
     bool CheckBlock(int nHeight, const uint256& hash)
     {
