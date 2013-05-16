@@ -1,1 +1,6 @@
 src/version.cpp export-subst
+* text=auto
+*.c text
+*.cpp text
+*.h text
+*.sh text eol=lf
