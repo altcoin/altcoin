@@ -1,38 +1,20 @@
-Litecoin - a lite version of Bitcoin optimized for CPU mining using scrypt as a proof of work scheme.
+Altcoin - a rework of Litecoin, with various enhancements and changes.
+
  - 2.5 minute block targets
- - subsidy halves in 840k blocks (~4 years)
- - ~84 million total coins
+ - Base subsidy halves in 840k blocks (~4 years)
+ - Base reward of 50 coins, following the same timing as Bitcoin
 
-The rest is the same as bitcoin.
- - 50 coins per block
- - 2016 blocks to retarget difficulty
+Significant changes are:
+ - Every block has a 'bonus' reward, based on the current difficulty. (1% of the current difficulty is added to the base reward)
+ - Fast response to network hashing changes
 
-Development process
-===================
+At the time this coin was released, there was a significant number of Alternative
+cryptocurrencies being created, without any idea of what they were changing, or why,
+with them - justifiably - being labled a scam, or a pump'n'dump scheme. 
 
-Developers work in their own trees, then submit pull requests when
-they think their feature or bug fix is ready.
+This coin has been tuned to be responsive to a modern fast-switching, profit-driven
+network, and will avoid block chain stalls, and encourage larger use. 
 
-The patch will be accepted if there is broad consensus that it is a
-good thing.  Developers should expect to rework and resubmit patches
-if they don't match the project's coding conventions (see coding.txt)
-or are controversial.
+All original development, from the fork onwards, is available on Github.
 
-The master branch is regularly built and tested, but is not guaranteed
-to be completely stable. Tags are regularly created to indicate new
-official, stable release versions of Litecoin.
-
-Feature branches are created when there are major new features being
-worked on by several people.
-
-From time to time a pull request will become outdated. If this occurs, and
-the pull is no longer automatically mergeable; a comment on the pull will
-be used to issue a warning of closure. The pull will be closed 15 days
-after the warning if action is not taken by the author. Pull requests closed
-in this manner will have their corresponding issue labeled 'stagnant'.
-
-Issues with no commits will be given a similar warning, and closed after
-15 days from their last activity. Issues closed in this manner will be 
-labeled 'stale'. 
-
-Check out http://forum.litecoin.net/index.php/board,2.0.html for more info about the development.
+https://github.com/altcoin/altcoin
